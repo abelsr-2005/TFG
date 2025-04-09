@@ -17,7 +17,7 @@
   <li>Kubernetes (Minikube y/o K3s en entorno local/laboratorio)</li>
   <li>Docker para contenerización</li>
   <li>Ubuntu Server como sistema base</li>
-  <li>VirtualBox y/o Proxmox</li>
+  <li>Proxmox</li>
   <li>Helm, kubectl, YAML</li>
   <li>NGINX, Apache, MySQL</li>
   <li>Git y GitHub para control de versiones</li>
