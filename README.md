@@ -1,3 +1,38 @@
+<head>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f7f9fb;
+      color: #333;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #2b6cb0;
+    }
+    pre {
+      background: #f0f0f0;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+    code {
+      font-family: monospace;
+    }
+    ul {
+      list-style: square;
+      padding-left: 20px;
+    }
+    .banner {
+      width: 100%;
+      max-width: 900px;
+      margin: auto;
+      display: block;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
 <p align="center">
 <img src=".imgs/portada/banner.png" width="400">
 </p> <br> <br> <br> 
@@ -31,3 +66,4 @@ Este repositorio corresponde a mi Trabajo de Fin de Grado (TFG) del ciclo ASIR. 
 
 <h2>📄 Licencia</h2>
   <p>Este proyecto es de uso académico. Puedes utilizarlo como referencia, pero no está permitido copiarlo íntegramente para otros fines sin autorización.</p>
+</body>
