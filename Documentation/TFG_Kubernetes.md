@@ -8,6 +8,36 @@
 
 <h1 align="center">Implementación y gestión de contenedores con Kubernetes en entornos empresariales</h1>
 
+1. [Introducción](#introducción)
+   1.1. [Objetivos del trabajo](#objetivos-del-trabajo)
+       - [Comprender el funcionamiento y la arquitectura de Kubernetes](#comprender-el-funcionamiento-y-la-arquitectura-de-kubernetes)
+       - [Aprender a instalar y configurar un clúster Kubernetes](#aprender-a-instalar-y-configurar-un-clúster-kubernetes)
+       - [Implementar buenas prácticas de seguridad y monitorización](#implementar-buenas-prácticas-de-seguridad-y-monitorización)
+       - [Desplegar una aplicación en Kubernetes utilizando un pipeline de CI/CD](#desplegar-una-aplicación-en-kubernetes-utilizando-un-pipeline-de-cicd)
+       - [Evaluar casos de uso empresarial y su impacto en la administración de sistemas](#evaluar-casos-de-uso-empresarial-y-su-impacto-en-la-administración-de-sistemas)
+   1.2. [Metodología](#metodología)
+2. [Fundamentos de Kubernetes](#fundamentos-de-kubernetes)
+   2.1. [Historia y Evolución](#historia-y-evolución)
+   2.2. [Arquitectura básica](#arquitectura-básica)
+3. [Instalación y configuración de Kubernetes](#instalación-y-configuración-de-kubernetes)
+   3.1. [Métodos de instalación](#métodos-de-instalación)
+   3.2. [Configuración básica del clúster](#configuración-básica-del-clúster)
+4. [Seguridad en Kubernetes](#seguridad-en-kubernetes)
+5. [Despliegue de aplicaciones en Kubernetes](#despliegue-de-aplicaciones-en-kubernetes)
+   5.1. [Concepto de despliegue en Kubernetes](#concepto-de-despliegue-en-kubernetes)
+   5.2. [Componentes claves del Despliegue](#componentes-claves-del-despliegue)
+   5.3. [Estrategias de despliegue](#estrategias-de-despliegue)
+   5.4. [Integración con CI/CD](#integración-con-cicd)
+6. [Casos Prácticos](#casos-prácticos)
+   6.1. [Arquitectura de Microservicios](#arquitectura-de-microservicios)
+   6.2. [Kubernetes en entornos SaaS](#kubernetes-en-entornos-saas)
+   6.3. [Aplicaciones empresariales](#aplicaciones-empresariales)
+7. [Conclusiones y Futuras Mejoras](#conclusiones-y-futuras-mejoras)
+   7.1. [Conclusiones](#conclusiones)
+   7.2. [Retos y Futuras Mejoras](#retos-y-futuras-mejoras)
+
+
+
 <h1>Introducción.</h1>
 <p>En los últimos años, la tecnología ha evolucionado a grandes escalas, y con ella, la forma en que las empresas gestionan sus aplicaciones y servicios. En este contexto, Kubernetes ha emergido como una solución clave para orquestar contenedores, facilitando la automatización, la escalabilidad y la eficiencia en los despliegues de software. ¿Pero qué significa realmente esto en el día a día de una empresa?</p>
 <p>Imaginemos una organización que necesita ejecutar múltiples aplicaciones en diferentes entornos, como servidores locales y la nube. Sin una herramienta adecuada, la gestión de estos sistemas se vuelve caótica y propensa a errores. Kubernetes llega para resolver estos problemas, permitiendo que las aplicaciones se desplieguen de forma automática, se adapten a la demanda y se mantengan en funcionamiento sin intervención manual constante.</p>
