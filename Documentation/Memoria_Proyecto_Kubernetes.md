@@ -1,4 +1,4 @@
-![banner IES LA MARISMA](/TFG/.imgs/documentation/ies.png)
+![banner IES LA MARISMA](/.imgs/documentation/ies.png)
 
 # Implementación y gestión de contenedores con Kubernetes en entornos empresariales.
 #### Abel Sánchez Ramos
