@@ -12,6 +12,8 @@ El entorno de virtualización se gestiona mediante la interfaz web de Proxmox. P
 
 Se inicia sesión con las credenciales proporcionadas por el centro educativo, ya sea como alumno o con permisos de administración según la organización establecida.
 
+---
+
 ## 2. Creación de máquinas virtuales (VMs).
 Para la creación del clúster, se requieren al menos dos máquinas virtuales:
 - k8s-master: Nodo maestro que actuará como controlador del clúster.
@@ -39,3 +41,44 @@ Para la creación del clúster, se requieren al menos dos máquinas virtuales:
 5. Confirmar y crear la máquina.
 
 Este proceso se repite para la segunda VM (k8s-worker1) utilizando la misma configuración.
+
+---
+
+## 3. Instalación de Ubuntu Server
+Al iniciar las VMs creadas, se lanza el instalador de Ubuntu Server 22.04. El proceso es sencillo y guiado.
+
+###📋 Configuración recomendada:
+- Idioma: Español
+- Nombre del host: master o worker1
+- Nombre de usuario: abel (personalizable)
+- Contraseña segura
+- Red: DHCP o configuración IP estática si se requiere
+- Activar la opción "Instalar servidor OpenSSH"
+
+Una vez concluida la instalación, se reinicia el sistema y se accede con las credenciales creadas.
+
+---
+
+4. Configuración inicial del sistema
+Con Ubuntu ya operativo, se realiza una configuración básica común a todas las VMs para garantizar su correcto funcionamiento.
+
+### 🔄 Actualizar el sistema y establecer la zona horaria
+``
+sudo apt update && sudo apt upgrade -y
+sudo timedatectl set-timezone Europe/Madrid
+``
+
+### 🌐 Verificar conectividad de red
+``
+ip a
+ping google.com -c 4
+``
+### 🔐 Activar y verificar el servicio SSH
+``
+sudo systemctl enable ssh
+sudo systemctl start ssh
+sudo systemctl status ssh
+``
+Esta configuración permite acceder a la máquina de forma remota, facilitando la administración del clúster desde una terminal o sistema externo.
+
+
