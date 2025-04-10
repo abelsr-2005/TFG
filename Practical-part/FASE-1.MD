@@ -8,6 +8,20 @@ El objetivo principal es dejar listo el entorno virtualizado para la posterior i
 ## 1. Acceso al entorno Proxmox
 El entorno de virtualización se gestiona mediante la interfaz web de Proxmox. Para acceder, se utiliza el navegador accediendo a la siguiente dirección:
 
-``https://IP_DEL_SERVIDOR:8006``
+``https://DIRECCION_IP:8006``
 
 Se inicia sesión con las credenciales proporcionadas por el centro educativo, ya sea como alumno o con permisos de administración según la organización establecida.
+
+## 2. Creación de máquinas virtuales (VMs).
+Para la creación del clúster, se requieren al menos dos máquinas virtuales:
+- k8s-master: Nodo maestro que actuará como controlador del clúster.
+- k8s-worker1: Nodo trabajador que ejecutará los pods del clúster.
+
+💡 Recursos recomendados por máquina virtual:
+|-----|------------|
+| CPU | 2 CPU      |
+| RAM | 2-4 GB     |
+| Disco | 20 GB    |
+| S.O. | Ubuntu Server 22.04|
+| Red | Bridge/puente o vmbr0 o equivalente|
+|-----|------------|
