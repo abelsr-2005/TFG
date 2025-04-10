@@ -27,3 +27,14 @@ Para la creación del clúster, se requieren al menos dos máquinas virtuales:
 | SO      | Ubuntu Server 22.04 LTS      |
 | Red     | Bridge (vmbr0 o equivalente) |
 
+### 🛠️ Pasos para crear una VM en Proxmox:
+1. Pulsar en "Crear VM" en el panel izquierdo.
+2. Asignar un ID y nombre identificativo (por ejemplo, k8s-master).
+3. Seleccionar la ISO de Ubuntu Server 22.04 previamente subida al almacenamiento.
+4. Establecer:
+    - Tipo de disco: VirtIO (recomendado por rendimiento).
+    - Cantidad de CPU y RAM según necesidades.
+    - Tipo de red: bridge (vmbr0).
+5. Confirmar y crear la máquina.
+
+Este proceso se repite para la segunda VM (k8s-worker1) utilizando la misma configuración.
