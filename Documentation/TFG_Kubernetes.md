@@ -125,7 +125,7 @@
 <p><span style="font-weight:bold;">Canary</span><span style="font-weight:bold;"> </span><span style="font-weight:bold;">Deployment</span><span style="font-weight:bold;">: </span>Despliega una nueva versión a un pequeño porcentaje de usuarios antes de un despliegue completo</p>
 <h2>5.4. Integración con CI/CD.</h2>
 <p>El uso de herramientas de integración y entrega continua (CI/CD) permite automatizar los despliegues en Kubernetes. Estas herramientas ayudan a mejorar la eficiencia, reducir errores, y asegurar que las aplicaciones se implementes de forma correcta.</p>
-<h1>6. Casos Prácticos.</h1>
+<h1>Casos Prácticos.</h1>
 <p>En este apartado se presentarán algunos casos en los que Kubernetes se ha consolidado como una solución clave para coordinación de contenedores.</p>
 <h2>6.1. Arquitectura de Microservicios.</h2>
 <p>Hoy en día, muchas empresas están apostando por los microservicios como una forma de desarrollar aplicaciones más flexibles y escalables. Kubernetes encaja perfectamente en este enfoque, ya que permite ejecutar cada uno de estos servicios en contenedores separados, con la posibilidad de escalarlos de manera independiente según la demanda. Además, su capacidad para gestionar fallos y redistribuir cargas de trabajo hace que las aplicaciones sean más resilientes y fáciles de mantener.</p>
