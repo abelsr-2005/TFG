@@ -18,10 +18,12 @@ Para la creación del clúster, se requieren al menos dos máquinas virtuales:
 - k8s-worker1: Nodo trabajador que ejecutará los pods del clúster.
 
 💡 Recursos recomendados por máquina virtual:
-|-----|------------|
-| CPU | 2 CPU      |
-| RAM | 2-4 GB     |
-| Disco | 20 GB    |
-| S.O. | Ubuntu Server 22.04|
-| Red | Bridge/puente o vmbr0 o equivalente|
-|-----|------------|
+
+| Recurso | Valor recomendado            |
+|---------|------------------------------|
+| CPU     | 2 vCPU                       |
+| RAM     | 2-4 GB                       |
+| Disco   | 20 GB (almacenamiento local) |
+| SO      | Ubuntu Server 22.04 LTS      |
+| Red     | Bridge (vmbr0 o equivalente) |
+
