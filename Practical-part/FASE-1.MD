@@ -63,22 +63,22 @@ Una vez concluida la instalación, se reinicia el sistema y se accede con las cr
 Con Ubuntu ya operativo, se realiza una configuración básica común a todas las VMs para garantizar su correcto funcionamiento.
 
 ### 🔄 Actualizar el sistema y establecer la zona horaria
-``
+```
 sudo apt update && sudo apt upgrade -y
 sudo timedatectl set-timezone Europe/Madrid
-``
+```
 
 ### 🌐 Verificar conectividad de red
-``
+```
 ip a
 ping google.com -c 4
-``
+```
 ### 🔐 Activar y verificar el servicio SSH
-``
+```
 sudo systemctl enable ssh
 sudo systemctl start ssh
 sudo systemctl status ssh
-``
+```
 Esta configuración permite acceder a la máquina de forma remota, facilitando la administración del clúster desde una terminal o sistema externo.
 
 
