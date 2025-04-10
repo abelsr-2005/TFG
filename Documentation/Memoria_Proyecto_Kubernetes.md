@@ -134,3 +134,42 @@ Ejemplo de flujo CI/CD:
 
 Gracias a este enfoque automatizado, los equipos pueden hacer despliegues rápidos, controlados y seguros en cualquier entorno, desde desarrollo hasta producción.
 
+## 6. Casos Prácticos.
+### 6.1. Arquitectura de Microservicios.
+Hoy en día, muchas empresas están apostando por los microservicios como una forma de desarrollar aplicaciones más flexibles y escalables. Kubernetes encaja perfectamente en este enfoque, ya que permite ejecutar cada uno de estos servicios en contenedores separados, con la posibilidad de escalarlos de manera independiente según la demanda. Además, su capacidad para gestionar fallos y redistribuir cargas de trabajo hace que las aplicaciones sean más resilientes y fáciles de mantener.
+
+Otro punto clave es la posibilidad de integrar Service Meshes, como Istio, que facilita la comunicación entre microservicios, optimizando el tráfico de red y mejorando la seguridad. Con estas herramientas, se puede gestionar fácilmente la autenticación, el monitoreo y el balanceo de cargas sin necesidad de modificar la lógica de cada servicio.
+
+### 6.2. Kubernetes en entornos SaaS.
+Para las empresas que ofrecen Software como Servicio, Kubernetes se ha convertido en un aliado indispensable. Gracias a la capacidad de manejar múltiples instancias de aplicaciones, es posible optimizar los recursos y garantizar que cada cliente reciba un servicio estable y de alta disponibilidad. Además, permite realizar actualizaciones sin que los usuarios sufran interrupciones.
+
+Un beneficio importante en este contexto es la posibilidad de implementar estructuras multi-tenant. Esto significa que varias empresas pueden compartir la misma infraestructura sin comprometer la seguridad no la estabilidad del sistema. Kubernetes permite asignar recursos de manera eficiente y aislar los entornos de cada cliente mediante Namespaces y políticas de acceso específicas.
+
+### 6.3. Aplicaciones empresariales.
+Muchas compañías han comenzado a migrar sus aplicaciones tradicionales a Kubernetes con el objetivo de mejorar su flexibilidad y seguridad. Gracias a esta tecnología, es posible dividir aplicaciones monolíticas en componentes más pequeños y escalables, reduciendo los tiempos de implementación y facilitando la gestión de los recursos.
+
+Además, Kubernetes es compatible con arquitecturas híbridas y multinube, lo que permite a las empresas distribuir sus aplicaciones en diferentes proveedores de nube según sus necesidades y costos. También ofrece herramientas avanzadas de gestión de identidades y accesos, garantizando que solo los usuarios autorizados puedan interactuar con ciertos servicios.
+
+En conclusión, Kubernetes ha revolucionado la forma en que se gestionan y despliegan aplicaciones en la nube y en entornos empresariales. Su capacidad para escalar aplicaciones de manera eficiente, gestionar recursos de forma óptima y asegurar la disponibilidad de los servicios lo convierte en una herramienta fundamental en el panorama tecnológico actual.
+
+A medida que más empresas adoptan Kubernetes, se espera que la plataforma continúe evolucionando, incorporando mejoras en seguridad, automatización y facilidad de uso. La tendencia hacia la computación nativa en la nube y el auge de los microservicios consolidan a Kubernetes como un estándar en la orquestación de contenedores, asegurando su relevancia en el futuro del desarrollo y la infraestructura de software.
+
+## 7. Conclusiones y futuras mejoras.
+### 7.1. Conclusiones.
+A lo largo de este trabajo, se ha demostrado que Kubernetes es una tecnología clave en la transformación digital de las empresas, especialmente en lo que respecta a la gestión moderna de aplicaciones basadas en contenedores. Su arquitectura distribuida, su capacidad de auto-recuperación y su naturaleza declarativa permiten simplificar la operación de sistemas complejos, garantizando escalabilidad, alta disponibilidad y eficiencia operativa.
+Durante el desarrollo del proyecto, se ha comprobado que:
+- Kubernetes permite desacoplar la infraestructura del ciclo de vida de las aplicaciones, promoviendo prácticas DevOps y facilitando la implementación de microservicios.
+- La instalación y configuración de un clúster puede adaptarse a distintos escenarios, desde entornos de desarrollo local hasta infraestructuras cloud híbridas o multi-nube.
+- Las herramientas de monitorización y seguridad (como Prometheus, Grafana, RBAC o Vault) son esenciales para asegurar el correcto funcionamiento de los sistemas desplegados.
+- La integración de Kubernetes con pipelines CI/CD automatiza y agiliza los procesos de despliegue, garantizando versiones más estables y tiempos de entrega más rápidos.
+- El enfoque modular de Kubernetes permite una evolución tecnológica continua, donde cada componente del sistema puede ser actualizado, reemplazado o escalado sin afectar al resto de la infraestructura.
+
+En definitiva, Kubernetes no solo representa una mejora técnica, sino también un cambio de paradigma en la forma en que las empresas desarrollan, prueban, despliegan y mantienen sus aplicaciones.
+
+## 7.2. Retos y futuras mejoras
+A pesar de sus ventajas, Kubernetes no está exento de desafíos. Su curva de aprendizaje es pronunciada, y su administración puede volverse compleja sin las herramientas adecuadas. En el futuro, se espera:
+- Mejoras en la gestión de recursos, optimizando aún más el uso de hardware y software.
+- Mayor integración con nuevas tecnologías, como la computación serverless y la inteligencia artificial.
+- Avances en seguridad, con soluciones más robustas para la protección de datos y aplicaciones.
+
+El ecosistema Kubernetes continuará evolucionando, adaptándose a las necesidades de empresas y desarrolladores, consolidándose como el estándar en la gestión de contenedores a nivel global.
