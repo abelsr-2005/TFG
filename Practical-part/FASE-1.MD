@@ -81,4 +81,14 @@ sudo systemctl status ssh
 ```
 Esta configuración permite acceder a la máquina de forma remota, facilitando la administración del clúster desde una terminal o sistema externo.
 
+--- 
 
+### ✅ Resultado final de la Fase 1
+
+Al completar esta fase, se dispone de:
+
+- Dos máquinas virtuales en Proxmox con Ubuntu Server 22.04 LTS completamente operativas.
+
+- Configuración básica aplicada: sistema actualizado, zona horaria correcta, conectividad y SSH habilitado.
+
+Estas VMs están completamente preparadas para dar paso a la Fase 2: Instalación del clúster Kubernetes, donde se iniciará el proceso de despliegue del entorno de contenedores.
