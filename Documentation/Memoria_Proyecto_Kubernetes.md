@@ -74,3 +74,63 @@ Una vez instalado kubernetes, es fundamental realizar una configuración adecuad
      - Herramientas de almacenamiento: Aplicaciones como Persistent Volumens facilitan la gestión de almacenamiento persistente.
   
 Con estos pasos, el clúster Kubernetes estará listo para desplegar y gestionar aplicaciones de manera eficiente, asegurando alta disponibilidad y escalabilidad.
+
+## 4. Seguridad en Kubernetes.
+La seguridad es algo esencial en cualquier aspecto de Kubernetes para garantizar la integridad, confidencialidad y disponibilidad de las aplicaciones desplegadas en un entorno empresarial. 
+A diferencia de los entornos tradicionales, Kubernetes permite el despliegue dinámico de contenedores en múltiples nodos dentro de un clúster, lo que, aunque altamente beneficioso, también abre la puerta a posibles vulnerabilidades si no se implementan los mecanismos de protección adecuados.
+
+A continuación, se presentan algunas soluciones clave organizadas por su propósito:
+- Role-Based Access Control (RBAC): Kubernetes implementa RBAC para restringir y administrar los permisos dentro del clúster. Con RBAC, es posible definir roles y asignarlos a usuarios o grupos, limitando su capacidad de interactuar con los recursos. Esto previene accesos no autorizados y minimiza el impacto de posibles compromisos.
+- Network Policies: Permiten definir reglas que restringen la comunicación entre Pods dentro del clúster. A través de estas políticas, los administradores pueden controlar qué servicios pueden comunicarse entre sí, reduciendo la superficie de ataque y limitando el movimiento lateral de amenazas.
+- Escaneo de Vulnerabilidades: Herramientas como Trivy y Clair analizan las imágenes de contenedores en busca de vulnerabilidades conocidas, garantizando que solo se desplieguen versiones seguras en el clúster.
+- Gestión de Secretos con HashiCorp Vault: Kubernetes almacena credenciales y secretos de configuración de forma nativa, pero herramientas como HashiCorp Vault proporcionan una gestión más segura, permitiendo el almacenamiento cifrado y el acceso controlado a información sensible.
+
+Estas herramientas conforman un ecosistema de seguridad robusto para Kubernetes, ayudando a prevenir, detectar y mitigar riesgos en entornos de contenedores. Implementar una estrategia de seguridad integral es esencial para garantizar la estabilidad y protección de las aplicaciones desplegadas en un clúster.
+
+## 5. Despliegue de aplicaciones en Kubernetes.
+El despliegue de aplicaciones en Kubernetes representa una de las funcionalidades más potentes y demandadas en entornos empresariales. Este proceso permite administrar el ciclo de vida completo de las aplicaciones, desde su creación hasta su actualización o eliminación, con altos niveles de automatización, control y escalabilidad.
+
+Kubernetes ofrece un modelo declarativo, donde los desarrolladores y administradores describen el estado deseado del sistema (por ejemplo, cuántas réplicas debe tener una aplicación) y el clúster se encarga de alcanzarlo y mantenerlo. Esto permite reducir errores humanos, responder rápidamente ante caídas y gestionar picos de tráfico sin intervención manual.
+
+### 5.1. Comcepto de despliegue en Kubernetes
+Desplegar una aplicación en Kubernetes implica ejecutar contenedores dentro de un clúster, organizándolos mediante objetos como Pods, Deployments, y Services.
+
+- La principal ventaja es que Kubernetes permite realizar despliegues:
+- Automatizados, gracias al controlador de Deployment.
+- Escalables, mediante la adición o eliminación de réplicas de pods.
+- Resilientes, reprogramando pods fallidos automáticamente.
+
+### 5.2. Componentes claves del Despliegue.
+Los principales elementos involucrados en el despliegue de aplicaciones son:
+- Pods: Unidad mínima de ejecución que encapsula uno o más contenedores. Comparten red y almacenamiento, facilitando la comunicación interna entre procesos relacionados.
+- Deployments: Administran la creación y actualización de Pods de forma declarativa. Kubernetes garantiza que el estado real del sistema se acerque al estado deseado definido por el usuario.
+- Services: Abstracción que expone una aplicación como un punto de red estable. Pueden ser:
+  - ClusterIP: Solo accesible desde dentro del clúster.
+  - NodePort: Expone el servicio en un puerto específico de cada nodo.
+  - LoadBalancer: Utilizado en la nube para balancear la carga automáticamente.
+- ConfigMaps y Secrets:
+  - ConfigMaps: Almacenan configuraciones no sensibles (por ejemplo, variables de entorno).
+  - Secrets: Manejan información sensible (por ejemplo, contraseñas, claves de API) de forma segura.
+
+### 5.3. Estrategias de despliegue
+Kubernetes soporta diversas estrategias de despliegue para minimizar interrupciones y facilitar la transición entre versiones:
+- Rolling Update (por defecto): Actualiza gradualmente los pods de una aplicación sin tiempo de inactividad. Sustituye cada pod uno por uno hasta que todos estén actualizados.
+- Blue-Green Deployment: Mantiene dos entornos (azul y verde), uno activo y otro pasivo. Se despliega la nueva versión en el entorno pasivo y se cambia el tráfico cuando todo esté listo. Permite volver fácilmente a la versión anterior.
+- Canary Deployment: Despliega una nueva versión a un pequeño subconjunto de usuarios. Si todo funciona correctamente, se amplía la distribución al resto. Muy útil para detectar errores tempranos.
+
+Estas estrategias son fundamentales para entornos de producción, donde cualquier fallo puede implicar pérdidas económicas o de servicio.
+
+### 5.4. Integración con CI/CD.
+La integración de Kubernetes con herramientas CI/CD permite automatizar todo el proceso de compilación, pruebas y despliegue de aplicaciones. Esto mejora la eficiencia del equipo y reduce los errores humanos.
+Herramientas destacadas:
+- GitHub Actions: Permite definir flujos de trabajo directamente desde el repositorio. Por ejemplo, cada vez que se haga un push a la rama principal, se puede construir la imagen y desplegar en Kubernetes.
+- Argo CD: Solución declarativa basada en GitOps. Supervisa un repositorio Git y aplica automáticamente los cambios detectados al clúster. Garantiza que el estado del clúster siempre esté sincronizado con lo que define el repositorio.
+
+Ejemplo de flujo CI/CD:
+1. El desarrollador sube cambios a GitHub.
+2. GitHub Actions construye una nueva imagen Docker y la publica en un registry (como Docker Hub).
+3. Se actualiza un manifiesto YAML con la nueva versión.
+4. Argo CD detecta el cambio y aplica el nuevo manifiesto en Kubernetes.
+
+Gracias a este enfoque automatizado, los equipos pueden hacer despliegues rápidos, controlados y seguros en cualquier entorno, desde desarrollo hasta producción.
+
