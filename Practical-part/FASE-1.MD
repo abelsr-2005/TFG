@@ -1,4 +1,4 @@
-![Banner La Marisma](/.imgs/Documentation/ies.png)
+![Banner La Marisma](.imgs/documentation/ies.png)
 
 # FASE 1: Preparación del entorno de trabajo en Proxmox
 
