@@ -189,6 +189,6 @@ _2º Administración de Sistemas Informáticos en Red (ASIR)_
 
 ---
 
-> **“La tecnología no se trata solo de herramientas, sino de cómo las usamos para cambiar el mundo.”**
+> **“No se trata solo de proteger sistemas, sino de entender que cada línea de código, cada puerto abierto y cada contraseña débil es una posible historia de ataque aún no contada.”**
 
 </div>
