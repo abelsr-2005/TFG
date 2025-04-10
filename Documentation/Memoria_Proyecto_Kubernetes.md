@@ -48,18 +48,25 @@
 <p>Imaginemos una organización que necesita ejecutar múltiples aplicaciones en diferentes entornos, como servidores locales y la nube. Sin una herramienta adecuada, la gestión de estos sistemas se vuelve caótica y propensa a errores. Kubernetes llega para resolver estos problemas, permitiendo que las aplicaciones se desplieguen de forma automática, se adapten a la demanda y se mantengan en funcionamiento sin intervención manual constante.</p>
 <p>Desde su creación por Google y su posterior donación a la Cloud Native Computing Foundation, Kubernetes ha ganado una gran adopción en el mundo empresarial. Su flexibilidad y potencia han hecho que compañías de todos los tamaños lo implementen para mejorar sus procesos. No obstante, su uso no está exento de desafíos: la curva de aprendizaje puede ser pronunciada y requiere una planificación adecuada para aprovechar todo su potencial.</p>
 <p>Este trabajo explorará cómo implementar y gestionar Kubernetes en entornos empresariales, desglosando sus ventajas, los desafíos que presenta y las mejores prácticas para su administración. A lo largo del documento, abordaremos desde los conceptos básicos de su arquitectura hasta su integración con herramientas de monitorización y seguridad, con el objetivo de proporcionar una visión clara y práctica de su uso en el mundo real.</p>
+
 <h2> Objetivos del trabajo:</h2>
 <p>El propósito de este trabajo es proporcionar un conocimiento detallado y práctico sobre Kubernetes, centrándose en su implementación y gestión en entornos empresariales. Para ello, se han establecido los siguientes objetivos específicos:</p>
-<h3>Comprender el funcionamiento y la arquitectura de Kubernetes.</h3>
+<ul>
+<li>Comprender el funcionamiento y la arquitectura de Kubernetes.</li>
 <p>Se realizarán actividades como, analizar la estructura y sus componentes principales. Se estudiará como interactúan los nodos, pods y servicios dentro de un clúster. Pol último conoceremos los mecanismos internos de comunicación y gestión de cargas de trabajo.</p>
-<h3>Aprender a instalar y configurar un clúster Kubernetes.</h3>
+
+<li>Aprender a instalar y configurar un clúster Kubernetes.</li>
 <p>En este punto trataremos actividades como explorar diferentes métodos de instalación como Minikube, Kubeadm y servicios en la nube. También configuraremos entornos de desarrollo y producción, asegurando su estabilidad y rendimiento. Por último, implementaremos estrategias para garantizar alta disponibilidad y tolerancia a fallos. </p>
-<h3>Implementar buenas prácticas de seguridad y monitorización.</h3>
+
+<li>Implementar buenas prácticas de seguridad y monitorización.</li>
 <p>Aquí aplicaremos políticas de control de acceso mediante RBAC. Configuraremos herramientas como Prometheus y Grafana para la monitorización del clúster. Por último, gestionaremos secretos y configuraciones sensibles con ConfigMaps y Secrets.</p>
-<h3>Desplegar una aplicación en Kubernetes utilizando un pipeline de CI/CD.</h3>
+
+<li>Desplegar una aplicación en Kubernetes utilizando un pipeline de CI/CD.</li>
 <p>Automatizaremos el despliegue de aplicaciones mediante herramientas como GitHub Actions y ArgoCD. Integraremos Kubernetes con entornos de integración y entrega continua. Por último, analizaremos estrategias para el versionado y rollback de aplicaciones en producción.</p>
-<h3>Evaluar casos de uso empresarial y su impacto en la administración de sistemas.</h3>
+
+<li>Evaluar casos de uso empresarial y su impacto en la administración de sistemas.</li>
 <p>En este último punto trataremos ejemplos reales de empresas que han integrado Kubernetes. Analizaremos los beneficios y desafíos de la migración de aplicaciones monolíticas a contenedores. Por último, identificaremos tendencias futuras en la adopción y evolución de Kubernetes en la industria.</p>
+</ul>
 <h2> Metodología</h2>
 <p>Para abordar este estudio, se adoptará un enfoque práctico. Se llevará a cabo la implementación de un clúster Kubernetes y se analizarán casos de uso reales dentro del sector empresarial. A través de pruebas y experimentos en un entorno controlado, se recopilarán métricas sobre el rendimiento, la escalabilidad y la seguridad de Kubernetes, permitiendo una evaluación detallada de sus capacidades y limitaciones.</p>
 <h1>Fundamentos de Kubernetes.</h1>
