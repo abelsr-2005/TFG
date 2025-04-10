@@ -7,7 +7,6 @@
 </p>
 
 <h1 align="center">Implementación y gestión de contenedores con Kubernetes en entornos empresariales</h1>
-## Índice
 
 1. [Introducción](#introducción)  
    1.1. [Objetivos del trabajo](#objetivos-del-trabajo)  
@@ -42,7 +41,6 @@
 7. [Conclusiones y Futuras Mejoras](#conclusiones-y-futuras-mejoras)  
    7.1. [Conclusiones](#conclusiones)  
    7.2. [Retos y Futuras Mejoras](#retos-y-futuras-mejoras)
-
 
 
 <h1>Introducción.</h1>
