@@ -2,8 +2,11 @@
 <head><meta charset="UTF-8"></head>
 
 <body>
-<img style="width= 50%" src="/.imgs/documentation/ies.png" />
-  <h1 align="center">Implementación y gestión de contenedores con Kubernetes en entornos empresariales</h1>
+<p align="center">
+  <img src="./.imgs/documentation/ies.png" width="50%">
+</p>
+
+<h1 align="center">Implementación y gestión de contenedores con Kubernetes en entornos empresariales</h1>
 <h1>Abel Sánchez Ramos – 2º ASIR – 27-03-2025</h1> <br> <br>
 <h1>Introducción.</h1>
 <p>En los últimos años, la tecnología ha evolucionado a grandes escalas, y con ella, la forma en que las empresas gestionan sus aplicaciones y servicios. En este contexto, Kubernetes ha emergido como una solución clave para orquestar contenedores, facilitando la automatización, la escalabilidad y la eficiencia en los despliegues de software. ¿Pero qué significa realmente esto en el día a día de una empresa?</p>
