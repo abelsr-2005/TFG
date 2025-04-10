@@ -17,7 +17,7 @@ Para la creación del clúster, se requieren al menos dos máquinas virtuales:
 - k8s-master: Nodo maestro que actuará como controlador del clúster.
 - k8s-worker1: Nodo trabajador que ejecutará los pods del clúster.
 
-💡 Recursos recomendados por máquina virtual:
+### 💡 Recursos recomendados por máquina virtual:
 
 | Recurso | Valor recomendado            |
 |---------|------------------------------|
