@@ -173,3 +173,22 @@ A pesar de sus ventajas, Kubernetes no está exento de desafíos. Su curva de ap
 - Avances en seguridad, con soluciones más robustas para la protección de datos y aplicaciones.
 
 El ecosistema Kubernetes continuará evolucionando, adaptándose a las necesidades de empresas y desarrolladores, consolidándose como el estándar en la gestión de contenedores a nivel global.
+
+---
+
+<div align="center">
+
+### ✍️ Trabajo realizado por
+
+# **Abel Sánchez Ramos**
+
+_2º Administración de Sistemas Informáticos en Red (ASIR)_
+
+📅 Marzo de 2025  
+📍 Geotexan S.A.
+
+---
+
+> **“La tecnología no se trata solo de herramientas, sino de cómo las usamos para cambiar el mundo.”**
+
+</div>
