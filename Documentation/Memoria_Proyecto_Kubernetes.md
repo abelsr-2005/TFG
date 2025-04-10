@@ -185,7 +185,7 @@ El ecosistema Kubernetes continuará evolucionando, adaptándose a las necesidad
 _2º Administración de Sistemas Informáticos en Red (ASIR)_
 
 📅 Marzo de 2025  
-📍 Geotexan S.A.
+📍 IES La Marisma; Avda Santa Marta, Huelva
 
 ---
 
