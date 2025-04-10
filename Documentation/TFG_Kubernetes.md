@@ -3,7 +3,7 @@
 
 <body>
 <p align="center">
-  <img src="./.imgs/documentation/ies.png" width="50%">
+  <img src="/.imgs/documentation/ies.png" width="50%">
 </p>
 
 <h1 align="center">Implementación y gestión de contenedores con Kubernetes en entornos empresariales</h1>
