@@ -49,7 +49,7 @@ Este proceso se repite para la segunda VM (k8s-worker1) utilizando la misma conf
 ## 3. Instalación de Ubuntu Server
 Al iniciar las VMs creadas, se lanza el instalador de Ubuntu Server 22.04. El proceso es sencillo y guiado.
 
-###📋 Configuración recomendada:
+### 📋 Configuración recomendada:
 - Idioma: Español
 - Nombre del host: master o worker1
 - Nombre de usuario: abel (personalizable)
