@@ -94,3 +94,21 @@ Tras finalizar esta fase:
 - Todos los nodos están correctamente conectados y sincronizados.
 - El entorno está listo para desplegar aplicaciones y añadir funcionalidades como monitorización o CI/CD en las siguientes fases.
 
+---
+
+<div align="center">
+
+### ✍️ Trabajo realizado por
+
+# **Abel Sánchez Ramos**
+
+_2º Administración de Sistemas Informáticos en Red (ASIR)_
+
+📅 Marzo de 2025  
+📍 IES La Marisma; Avda Santa Marta, Huelva
+
+---
+
+> **“No se trata solo de proteger sistemas, sino de entender que cada línea de código, cada puerto abierto y cada contraseña débil es una posible historia de ataque aún no contada.”**
+
+</div>
