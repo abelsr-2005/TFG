@@ -1,3 +1,4 @@
+![Banner La Marisma](/.imgs/documentation/ies.png)
 # 🚀 FASE 2: Instalación del clúster Kubernetes con kubeadm
 
 ### 🔰 Introducción
